@@ -1,4 +1,4 @@
-import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                      */import{S as i}from"./assets/vendor-CgTBfC_f.js";const p=document.createElement("style");p.textContent=`
+import"./assets/modulepreload-polyfill-B5Qt9EMX.js";import{S as i}from"./assets/vendor-CgTBfC_f.js";const p=document.createElement("style");p.textContent=`
 .gallery {
   list-style: none;
   padding: 0;
