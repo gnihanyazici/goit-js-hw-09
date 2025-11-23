@@ -110,8 +110,6 @@ export const images = [
 const gallery = document.querySelector(".gallery");
 
 // 1️Galeri HTMl oluştur
-export function createGalleryMarkup(images){
-    return images
     const markup = images
     .map(
     ({ preview, original, description }) => `
@@ -126,7 +124,7 @@ export function createGalleryMarkup(images){
         </li>`
   )
   .join("");
-} 
+
   
 
   gallery.innerHTML = markup;
