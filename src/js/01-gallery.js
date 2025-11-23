@@ -107,6 +107,7 @@ style.textContent = `
 }
   `;
 
+window.addEventListener("DOMContentLoaded", () => {
 document.head.appendChild(style);
 
 // 1️Galeri HTMl oluştur
@@ -132,4 +133,5 @@ new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionPosition: 'bottom',
   captionDelay: 250,
+});
 });

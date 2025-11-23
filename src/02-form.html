@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
-  </head>
-  <body>
-    
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Form</title>
+  <style>
+    .feedback-form {
+      max-width: 400px;
+      margin: 50px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .feedback-form label {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+    }
+    .feedback-form input,
+    .feedback-form textarea {
+      padding: 8px;
+      font-size: 1rem;
+      margin-top: 5px;
+    }
+    .feedback-form button {
+      padding: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <form class="feedback-form" autocomplete="off">
+    <label>
+      Email
+      <input type="email" name="email" autofocus />
+    </label>
+    <label>
+      Message
+      <textarea name="message" rows="8"></textarea>
+    </label>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script type="module" src="./js/02-form.js"></script>
+</body>
 </html>
